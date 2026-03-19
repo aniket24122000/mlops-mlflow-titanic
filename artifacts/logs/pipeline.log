@@ -1,0 +1,18 @@
+2026-03-19 19:05:29,113 - INFO - Starting Data Ingestion
+2026-03-19 19:05:34,942 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:05:34,943 - INFO - Starting preprocessing
+2026-03-19 19:05:34,964 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:05:34,965 - INFO - Starting feature engineering
+2026-03-19 19:05:34,986 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:05:34,986 - INFO - Starting Model Training
+2026-03-19 19:05:35,221 - INFO - Model Accuracy: 0.784688995215311
+2026-03-19 19:05:35,263 - INFO - Model saved at artifacts/model.pkl
+2026-03-19 19:08:16,606 - INFO - Starting Data Ingestion
+2026-03-19 19:08:16,638 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:08:16,639 - INFO - Starting preprocessing
+2026-03-19 19:08:16,662 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:08:16,662 - INFO - Starting feature engineering
+2026-03-19 19:08:16,684 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:08:16,684 - INFO - Starting Model Training
+2026-03-19 19:08:16,892 - INFO - Model Accuracy: 0.7894736842105263
+2026-03-19 19:08:16,934 - INFO - Model saved at artifacts/model.pkl
