@@ -1,12 +1,29 @@
+import mlflow.sklearn
 import pandas as pd
 import os
 import joblib
+import mlflow
+from dotenv import load_dotenv
+
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+
 from src.logger import get_logger
 
+# load env
+load_dotenv()
+
 logger = get_logger()
+
+# MLflow settings
+mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+mlflow.set_experiment(os.getenv("MLFLOW_EXPERIMENT_NAME"))
+
+# authentication
+os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
+os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
+
 
 def train_model(input_path):
 
@@ -21,22 +38,39 @@ def train_model(input_path):
         X, y, test_size=0.2, random_state=42
     )
 
-    model = RandomForestClassifier()
+    with mlflow.start_run():
 
-    model.fit(X_train, y_train)
+        model = RandomForestClassifier()
 
-    preds = model.predict(X_test)
+        model.fit(X_train, y_train)
 
-    acc = accuracy_score(y_test, preds)
+        preds = model.predict(X_test)
 
-    logger.info(f"Model Accuracy: {acc}")
+        acc = accuracy_score(y_test, preds)
 
-    os.makedirs("artifacts", exist_ok=True)
+        logger.info(f"Accuracy: {acc}")
 
-    model_path = "artifacts/model.pkl"
+        # log parameter
+        mlflow.log_param("model", "RandomForest")
 
-    joblib.dump(model, model_path)
+        # log metric
+        mlflow.log_metric("accuracy", acc)
 
-    logger.info(f"Model saved at {model_path}")
+        # save local artifact
+        os.makedirs("artifacts", exist_ok=True)
+        model_path = "artifacts/model.pkl"
+        joblib.dump(model, model_path)
+
+        # log artifact (optional)
+        mlflow.log_artifact(model_path)
+
+        #log model
+        mlflow.sklearn.log_model(
+            sk_model=model,
+            artifact_path="model",
+            registered_model_name="titanic_model"
+        )
+
+        logger.info("Model logged and registered successfully")
 
     return acc

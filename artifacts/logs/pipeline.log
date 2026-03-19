@@ -16,3 +16,62 @@
 2026-03-19 19:08:16,684 - INFO - Starting Model Training
 2026-03-19 19:08:16,892 - INFO - Model Accuracy: 0.7894736842105263
 2026-03-19 19:08:16,934 - INFO - Model saved at artifacts/model.pkl
+2026-03-19 19:18:16,405 - INFO - Starting Data Ingestion
+2026-03-19 19:18:16,520 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:18:16,521 - INFO - Starting preprocessing
+2026-03-19 19:18:16,546 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:18:16,547 - INFO - Starting feature engineering
+2026-03-19 19:18:16,570 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:18:16,571 - INFO - Starting Model Training
+2026-03-19 19:18:19,714 - INFO - Accuracy: 0.7703349282296651
+2026-03-19 19:18:23,224 - INFO - Model saved successfully
+2026-03-19 19:20:26,897 - INFO - Starting Data Ingestion
+2026-03-19 19:20:26,938 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:20:26,938 - INFO - Starting preprocessing
+2026-03-19 19:20:27,021 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:20:27,021 - INFO - Starting feature engineering
+2026-03-19 19:20:27,050 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:20:27,050 - INFO - Starting Model Training
+2026-03-19 19:20:28,142 - INFO - Accuracy: 0.7894736842105263
+2026-03-19 19:20:32,072 - INFO - Model saved successfully
+2026-03-19 19:46:35,092 - INFO - Starting Data Ingestion
+2026-03-19 19:46:35,144 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:46:35,144 - INFO - Starting preprocessing
+2026-03-19 19:46:35,166 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:46:35,167 - INFO - Starting feature engineering
+2026-03-19 19:46:35,185 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:46:35,185 - INFO - Starting Model Training
+2026-03-19 19:46:36,246 - INFO - Accuracy: 0.7942583732057417
+2026-03-19 19:47:58,426 - INFO - Starting Data Ingestion
+2026-03-19 19:47:58,479 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:47:58,479 - INFO - Starting preprocessing
+2026-03-19 19:47:58,503 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:47:58,503 - INFO - Starting feature engineering
+2026-03-19 19:47:58,522 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:47:58,522 - INFO - Starting Model Training
+2026-03-19 19:47:59,527 - INFO - Accuracy: 0.7894736842105263
+2026-03-19 19:48:11,872 - INFO - Starting Data Ingestion
+2026-03-19 19:48:11,902 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:48:11,903 - INFO - Starting preprocessing
+2026-03-19 19:48:11,930 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:48:11,930 - INFO - Starting feature engineering
+2026-03-19 19:48:11,952 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:48:11,952 - INFO - Starting Model Training
+2026-03-19 19:48:12,957 - INFO - Accuracy: 0.7894736842105263
+2026-03-19 19:48:29,771 - INFO - Starting Data Ingestion
+2026-03-19 19:48:29,813 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:48:29,813 - INFO - Starting preprocessing
+2026-03-19 19:48:29,837 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:48:29,837 - INFO - Starting feature engineering
+2026-03-19 19:48:29,855 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:48:29,855 - INFO - Starting Model Training
+2026-03-19 19:48:31,137 - INFO - Accuracy: 0.7703349282296651
+2026-03-19 19:49:12,137 - INFO - Starting Data Ingestion
+2026-03-19 19:49:12,175 - INFO - Raw dataset saved to data/raw/titanic_raw.csv
+2026-03-19 19:49:12,175 - INFO - Starting preprocessing
+2026-03-19 19:49:12,197 - INFO - Preprocessed data saved at data/processed/preprocessed.csv
+2026-03-19 19:49:12,197 - INFO - Starting feature engineering
+2026-03-19 19:49:12,218 - INFO - Feature dataset saved at data/processed/features.csv
+2026-03-19 19:49:12,218 - INFO - Starting Model Training
+2026-03-19 19:49:13,159 - INFO - Accuracy: 0.7894736842105263
+2026-03-19 19:49:40,021 - INFO - Model logged and registered successfully
