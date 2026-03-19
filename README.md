@@ -277,6 +277,12 @@ Workflow location:
 
 ---
 
-# Author
+#Virtual Server Image 
+<img width="1868" height="992" alt="image" src="https://github.com/user-attachments/assets/4d6046c7-e5f3-434a-ab86-1d2068160028" />
 
-MLOps Titanic Prediction Project
+<img width="1907" height="941" alt="image" src="https://github.com/user-attachments/assets/a53b0b52-bec4-409c-a0fc-a5de09388bf6" />
+
+#MLFLOW Dagshub 
+DagsHUB url : https://dagshub.com/aniketkandrikar29/mlops-mlflow-titanic.mlflow/#/experiments/2/runs?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D
+<img width="1918" height="980" alt="image" src="https://github.com/user-attachments/assets/eca80e45-1843-4727-b2c2-7d2978ccdbdc" />
+
